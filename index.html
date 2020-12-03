@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2048</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script type="module" src="./engine/game.js"></script>
+    <script type="module" src="./engine/view.js"></script>
+    <script type="module" src="2048.js"></script>
+
+</head>
+<body>
+    <div class="contain">
+        <span style="font-size: 50px; font-weight: 700;">2048 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
+        <h2 style="display: inline;">Score: <span id="score"></span> </h2><br>
+        <button class="newgamebtn" id="start">New Game</button>
+    </div>
+    <div id="winlose" class="prompt"></div>
+    <div id="game"></div>
+    <div class="contain">
+        <p><b>HOW TO PLAY:</b> Use your <b>arrow keys</b> to move the tiles. Tiles with the same number <b>merge into one</b> when they touch. Add them up to reach <b>2048</b>!</p>
+    </div>
+
+</body>
+</html>
